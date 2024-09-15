@@ -1,0 +1,425 @@
+/* button styles start */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.button:active:focus {
+  transform: scale(0.97);
+}
+
+.button span {
+  color: var(--text-pri);
+  text-align: center;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.button-pri {
+  background-color: var(--accent-pri);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.button-pri span {
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.2px;
+}
+
+.button-outline {
+  border: 1px solid #e6e6e6;
+  background: transparent;
+}
+
+.button-outline span {
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.3px;
+}
+
+.button-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+}
+/* button styles end */
+
+/* filter search styles start */
+.filter-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.filter-wrapper .search-container {
+  margin-right: auto;
+}
+/* filter search styles end */
+
+/* table styles start */
+.table-wrapper {
+  margin-top: 2rem;
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+
+.table-container {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.table thead th,
+.table tbody th,
+.table tbody td {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-right: 0.625rem;
+  padding-left: 0;
+  font-size: 1rem;
+  font-style: normal;
+}
+
+.table thead th {
+  color: #a0a0a0;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.2px;
+}
+
+.table tbody th,
+.table tbody td {
+  color: var(--text-pri);
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.3px;
+}
+
+.table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.table th,
+.table td {
+  text-wrap: nowrap;
+  vertical-align: middle;
+  border: none;
+}
+/* table styles end */
+
+/* pagination styles start */
+.pagination-wrapper {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.pagination-wrapper .pagination-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.pagination-container .pagination-item {
+  height: 2.5rem;
+  min-width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #575757;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.3px;
+}
+.pagination-container .pagination-item.active {
+  background: var(--accent-pri);
+  color: var(--text-pri);
+  font-weight: 500;
+}
+.pagination-wrapper .prev-page-btn,
+.pagination-wrapper .next-page-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #575757;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  letter-spacing: 0.3px;
+}
+.pagination-wrapper .prev-page-btn:focus,
+.pagination-wrapper .next-page-btn:focus {
+  outline: none;
+}
+/* pagination styles end */
+
+/* date picker styles start */
+.date-input {
+  width: 8.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  background: transparent;
+  cursor: pointer;
+}
+.date-input:focus {
+  outline: none;
+}
+.datepicker {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  z-index: 100;
+  background: var(--bg-sec);
+  padding: 1.25rem;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.datepicker.show {
+  top: 100%;
+  visibility: visible;
+  opacity: 100;
+}
+.datepicker button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.datepicker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.datepicker-header select,
+.datepicker-header input {
+  font-size: 0.875rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+.datepicker-header input {
+  max-width: 64px;
+}
+.datepicker-header button {
+  padding: 2px 8px;
+  vertical-align: middle;
+  background: var(--accent-pri);
+}
+.datepicker-header button:hover {
+  opacity: 0.8;
+}
+.datepicker-header button:active:focus {
+  transform: scale(0.96);
+}
+
+.datepicker .days,
+.datepicker .dates {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(32px, 1fr));
+  gap: 10px;
+  margin-block: 10px;
+}
+.datepicker .days span {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+.datepicker .dates button {
+  color: slategray;
+  aspect-ratio: 1;
+}
+.datepicker .dates button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}
+.datepicker .dates button:hover {
+  background: var(--accent-pri);
+  color: var(--text-pri);
+}
+.datepicker .dates button.today {
+  background: rgba(147, 112, 216, 0.2) !important;
+  color: mediumpurple;
+}
+.datepicker .dates button.selected {
+  background: var(--accent-pri) !important;
+  color: var(--text-pri) !important;
+}
+.datepicker .dates button.in-range {
+  background-color: rgba(147, 112, 216, 0.1);
+  color: mediumpurple;
+}
+.datepicker-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.datepicker-footer button {
+  background: rgba(119, 136, 153, 0.1);
+  padding: 3px 10px;
+}
+.datepicker-footer button.apply {
+  background: var(--accent-pri);
+  color: var(--text-pri);
+}
+/* date picker styles end */
+
+/* search styles start */
+.search-container {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 9px 16px;
+  border: 1px solid var(--border);
+  max-width: 320px;
+  width: 100%;
+}
+.search-container svg {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+.search-container input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+.search-container input::placeholder {
+  color: var(--text-placeholder);
+}
+/* search styles end */
+
+/* table checkbox styles start */
+.table-checkbox-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.table-checkbox-container input[type="checkbox"] {
+  display: none;
+}
+.table-checkbox-container input[type="checkbox"]:checked + .checkmark {
+  background-color: var(--accent-pri);
+  border-color: var(--accent-pri);
+}
+.table-checkbox-container input[type="checkbox"]:checked + .checkmark::after {
+  opacity: 1;
+}
+.table-checkbox-container .checkmark {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+}
+.table-checkbox-container .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 6px;
+  height: 12px;
+  border: solid var(--text-pri);
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+/* table checkbox styles end */
+
+/* nice select styles start */
+.select {
+  --arrow-width: 2px;
+  --arrow-size: 12px;
+  border-color: var(--border);
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 1rem;
+  padding-right: calc(var(--arrow-size) * 3);
+  border-radius: 8px;
+}
+.select.open,
+.select:focus {
+  border-color: var(--border);
+}
+.select .current {
+  color: #030c09;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.2px;
+}
+.select::after {
+  border-bottom: var(--arrow-width) solid #292d32;
+  border-right: var(--arrow-width) solid #292d32;
+  height: var(--arrow-size);
+  width: var(--arrow-size);
+  border-radius: 3px;
+  margin-top: 0;
+  translate: 0 -50%;
+  right: var(--arrow-size);
+  margin-top: -2px;
+}
+.select .list {
+  border-color: var(--border);
+  border-radius: 8px;
+  width: 100%;
+}
+.select .option:hover,
+.select .option.focus,
+.select .option.selected.focus {
+  background: var(--accent-pri);
+}
+.select .list .option {
+  padding: 0 1rem;
+  color: #030c09;
+  font-size: 1rem;
+}
+/* nice select styles end */

@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font end -->
+    <!-- css file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="layout-container overflow-container">
+      <aside class="sidebar-container">
+        <div class="sidebar">
+          <a href="" class="site-logo">
+            <img src="./assets/images/site-logo.png" alt="site logo" />
+            <span>Claudia Felix</span>
+          </a>
+          <nav class="nav-links">
+            <a href="./dashboard.html" class="nav-item active">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M20 17C20 18.6569 18.6569 20 17 20C15.3431 20 14 18.6569 14 17C14 15.3431 15.3431 14 17 14C18.6569 14 20 15.3431 20 17Z"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M14 6C14 4.89543 14.8954 4 16 4H18C19.1046 4 20 4.89543 20 6V8C20 9.10457 19.1046 10 18 10H16C14.8954 10 14 9.10457 14 8V6Z"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M4 6C4 4.89543 4.89543 4 6 4H8C9.10457 4 10 4.89543 10 6V8C10 9.10457 9.10457 10 8 10H6C4.89543 10 4 9.10457 4 8V6Z"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M4 16C4 14.8954 4.89543 14 6 14H8C9.10457 14 10 14.8954 10 16V18C10 19.1046 9.10457 20 8 20H6C4.89543 20 4 19.1046 4 18V16Z"
+                  stroke="black"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <span>Dashboard</span>
+            </a>
+            <a href="./booking.html" class="nav-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M8 2V5"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 2V5"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.5 9.09009H20.5"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.6937 13.7H15.7027"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.6937 16.7H15.7027"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.9945 13.7H12.0035"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11.9945 16.7H12.0035"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.29529 13.7H8.30427"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.29529 16.7H8.30427"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Bookings</span>
+            </a>
+            <a href="./orders.html" class="nav-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M8.5 14.25C8.5 16.17 10.08 17.75 12 17.75C13.92 17.75 15.5 16.17 15.5 14.25"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.80945 2L5.18945 5.63"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.1895 2L18.8095 5.63"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2 7.8501C2 6.0001 2.99 5.8501 4.22 5.8501H19.78C21.01 5.8501 22 6.0001 22 7.8501C22 10.0001 21.01 9.8501 19.78 9.8501H4.22C2.99 9.8501 2 10.0001 2 7.8501Z"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span>Orders</span>
+            </a>
+            <a href="./guests.html" class="nav-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Guests</span>
+            </a>
+            <a href="./payments.html" class="nav-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M8 11.4C8 12.17 8.6 12.8 9.33 12.8H10.83C11.47 12.8 11.99 12.25 11.99 11.58C11.99 10.85 11.67 10.59 11.2 10.42L8.8 9.57995C8.32 9.40995 8 9.14995 8 8.41995C8 7.74995 8.52 7.19995 9.16 7.19995H10.66C11.4 7.20995 12 7.82995 12 8.59995"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 12.8501V13.5901"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 6.40991V7.18991"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.99 17.98C14.4028 17.98 17.98 14.4028 17.98 9.99C17.98 5.57724 14.4028 2 9.99 2C5.57724 2 2 5.57724 2 9.99C2 14.4028 5.57724 17.98 9.99 17.98Z"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12.9805 19.88C13.8805 21.15 15.3505 21.98 17.0305 21.98C19.7605 21.98 21.9805 19.76 21.9805 17.03C21.9805 15.37 21.1605 13.9 19.9105 13"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Payments</span>
+            </a>
+            <a href="./message.html" class="nav-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M17.98 10.79V14.79C17.98 15.05 17.97 15.3 17.94 15.54C17.71 18.24 16.12 19.58 13.19 19.58H12.79C12.54 19.58 12.3 19.7 12.15 19.9L10.95 21.5C10.42 22.21 9.56 22.21 9.03 21.5L7.82999 19.9C7.69999 19.73 7.41 19.58 7.19 19.58H6.79001C3.60001 19.58 2 18.79 2 14.79V10.79C2 7.86001 3.35001 6.27001 6.04001 6.04001C6.28001 6.01001 6.53001 6 6.79001 6H13.19C16.38 6 17.98 7.60001 17.98 10.79Z"
+                  stroke="#030C09"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21.9791 6.79001V10.79C21.9791 13.73 20.6291 15.31 17.9391 15.54C17.9691 15.3 17.9791 15.05 17.9791 14.79V10.79C17.9791 7.60001 16.3791 6 13.1891 6H6.78906C6.52906 6 6.27906 6.01001 6.03906 6.04001C6.26906 3.35001 7.85906 2 10.7891 2H17.1891C20.3791 2 21.9791 3.60001 21.9791 6.79001Z"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.4955 13.25H13.5045"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.9955 13.25H10.0045"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.4955 13.25H6.5045"
+                  stroke="#292D32"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Message</span>
+            </a>
+            <a href="" class="nav-item settings">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                  stroke="#030C09"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2 12.8799V11.1199C2 10.0799 2.85 9.21994 3.9 9.21994C5.71 9.21994 6.45 7.93994 5.54 6.36994C5.02 5.46994 5.33 4.29994 6.24 3.77994L7.97 2.78994C8.76 2.31994 9.78 2.59994 10.25 3.38994L10.36 3.57994C11.26 5.14994 12.74 5.14994 13.65 3.57994L13.76 3.38994C14.23 2.59994 15.25 2.31994 16.04 2.78994L17.77 3.77994C18.68 4.29994 18.99 5.46994 18.47 6.36994C17.56 7.93994 18.3 9.21994 20.11 9.21994C21.15 9.21994 22.01 10.0699 22.01 11.1199V12.8799C22.01 13.9199 21.16 14.7799 20.11 14.7799C18.3 14.7799 17.56 16.0599 18.47 17.6299C18.99 18.5399 18.68 19.6999 17.77 20.2199L16.04 21.2099C15.25 21.6799 14.23 21.3999 13.76 20.6099L13.65 20.4199C12.75 18.8499 11.27 18.8499 10.36 20.4199L10.25 20.6099C9.78 21.3999 8.76 21.6799 7.97 21.2099L6.24 20.2199C5.33 19.6999 5.02 18.5299 5.54 17.6299C6.45 16.0599 5.71 14.7799 3.9 14.7799C2.85 14.7799 2 13.9199 2 12.8799Z"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Settings</span>
+            </a>
+          </nav>
+        </div>
+      </aside>
+      <div class="main-container">
+        <div class="main-content">
+          <div class="topbar">
+            <div class="search-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M22.7832 22L20.7832 20M2.7832 11.5C2.7832 6.25329 7.0365 2 12.2832 2C17.5299 2 21.7832 6.25329 21.7832 11.5C21.7832 16.7467 17.5299 21 12.2832 21C7.0365 21 2.7832 16.7467 2.7832 11.5Z"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <input type="text" placeholder="Search" />
+            </div>
+            <div class="user-dropdown dropdown">
+              <button
+                class="user-profile"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/user-profile.png"
+                  alt="user profile"
+                />
+                <span>
+                  <span class="user-name">Rafael Casimiro</span>
+                  <span class="user-role">Admin</span>
+                </span>
+                <svg
+                  class="arrow"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="vuesax/linear/arrow-down">
+                    <g id="arrow-down">
+                      <path
+                        id="Vector"
+                        d="M17.3836 7.45825L11.9503 12.8916C11.3086 13.5333 10.2586 13.5333 9.61693 12.8916L4.18359 7.45825"
+                        stroke="#292D32"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <button class="button button-icon button-pri" type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M12.8038 2.90991C9.49378 2.90991 6.80378 5.59991 6.80378 8.90991V11.7999C6.80378 12.4099 6.54378 13.3399 6.23378 13.8599L5.08378 15.7699C4.37378 16.9499 4.86378 18.2599 6.16378 18.6999C10.4738 20.1399 15.1238 20.1399 19.4338 18.6999C20.6438 18.2999 21.1738 16.8699 20.5138 15.7699L19.3638 13.8599C19.0638 13.3399 18.8038 12.4099 18.8038 11.7999V8.90991C18.8038 5.60991 16.1038 2.90991 12.8038 2.90991Z"
+                  stroke="#030C09"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M14.6531 3.19994C14.3431 3.10994 14.0231 3.03994 13.6931 2.99994C12.7331 2.87994 11.8131 2.94994 10.9531 3.19994C11.2431 2.45994 11.9631 1.93994 12.8031 1.93994C13.6431 1.93994 14.3631 2.45994 14.6531 3.19994Z"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.8027 19.0601C15.8027 20.7101 14.4527 22.0601 12.8027 22.0601C11.9827 22.0601 11.2227 21.7201 10.6827 21.1801C10.1427 20.6401 9.80273 19.8801 9.80273 19.0601"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+            </button>
+          </div>
+          <main>
+            <div class="title-wrapper">
+              <div class="title">
+                <h2 class="section-title">Welcome, Rafael 👋</h2>
+                <p class="des">
+                  Welcome to olive green , Manage your hotel booking data easily
+                  with us
+                </p>
+              </div>
+              <select class="select">
+                <option value="this mounth">This mounth</option>
+                <option value="this mounth">Prev mounth</option>
+                <option value="this mounth">Next mounth</option>
+              </select>
+              <button class="button button-pri" type="button">
+                <span>Download</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <path
+                    d="M9 11.5V17.5L11 15.5"
+                    stroke="#292D32"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9 17.5L7 15.5"
+                    stroke="#292D32"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 10.5V15.5C22 20.5 20 22.5 15 22.5H9C4 22.5 2 20.5 2 15.5V9.5C2 4.5 4 2.5 9 2.5H14"
+                    stroke="#292D32"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M22 10.5H18C15 10.5 14 9.5 14 6.5V2.5L22 10.5Z"
+                    stroke="#292D32"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="dashboard-wrapper">
+              <div class="dash-card-container">
+                <div class="dash-card">
+                  <div class="top">
+                    <div class="d-flex gap-2 align-items-center">
+                      <div class="dash-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M7.44922 9.5C7.44922 10.1417 7.94922 10.6667 8.55755 10.6667H9.80755C10.3409 10.6667 10.7742 10.2083 10.7742 9.65C10.7742 9.04167 10.5076 8.825 10.1159 8.68333L8.11589 7.98333C7.71589 7.84167 7.44922 7.625 7.44922 7.01667C7.44922 6.45833 7.88255 6 8.41589 6H9.66589C10.2826 6.00833 10.7826 6.525 10.7826 7.16667"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.11719 10.7083V11.3249"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.11719 5.34155V5.99155"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.10755 14.9834C12.7848 14.9834 15.7659 12.0024 15.7659 8.32508C15.7659 4.64779 12.7848 1.66675 9.10755 1.66675C5.43026 1.66675 2.44922 4.64779 2.44922 8.32508C2.44922 12.0024 5.43026 14.9834 9.10755 14.9834Z"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.5996 16.5666C12.3496 17.6249 13.5746 18.3166 14.9746 18.3166C17.2496 18.3166 19.0996 16.4666 19.0996 14.1916C19.0996 12.8083 18.4163 11.5833 17.3746 10.8333"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="dash-title">Total Revenue</div>
+                    </div>
+                    <div class="dash-data">$10,29,478</div>
+                  </div>
+                  <div class="down">Update: March 22, 2024</div>
+                </div>
+                <div class="dash-card">
+                  <div class="top">
+                    <div class="d-flex gap-2 align-items-center">
+                      <div class="dash-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M10.7008 18.3335H3.68411C2.71745 18.3335 1.92578 17.5585 1.92578 16.6085V4.24179C1.92578 2.05846 3.55078 1.06679 5.54245 2.04179L9.24245 3.85846C10.0424 4.25013 10.7008 5.29179 10.7008 6.17513V18.3335Z"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M18.5909 12.55V15.7C18.5909 17.5 17.7576 18.3333 15.9576 18.3333H10.6992V8.68335L11.0909 8.76668L14.8409 9.60835L16.5326 9.98335C17.6326 10.225 18.5326 10.7917 18.5826 12.3917C18.5909 12.4417 18.5909 12.4917 18.5909 12.55Z"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.86719 7.5H7.75885"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M4.86719 10.8335H7.75885"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M14.8418 9.60851V12.2918C14.8418 13.3252 14.0001 14.1668 12.9668 14.1668C11.9335 14.1668 11.0918 13.3252 11.0918 12.2918V8.76685L14.8418 9.60851Z"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M18.5835 12.3917C18.5335 13.3751 17.7168 14.1667 16.7168 14.1667C15.6835 14.1667 14.8418 13.3251 14.8418 12.2917V9.6084L16.5335 9.9834C17.6335 10.2251 18.5335 10.7917 18.5835 12.3917Z"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="dash-title">Total Rooms</div>
+                    </div>
+                    <div class="dash-data">1,250</div>
+                  </div>
+                  <div class="down">Update: March 22, 2024</div>
+                </div>
+                <div class="dash-card">
+                  <div class="top">
+                    <div class="d-flex gap-2 align-items-center">
+                      <div class="dash-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.94922 1.66675V4.16675"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.6172 1.66675V4.16675"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.19922 7.57495H17.3659"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M17.7832 7.08341V14.1667C17.7832 16.6667 16.5332 18.3334 13.6165 18.3334H6.94987C4.0332 18.3334 2.7832 16.6667 2.7832 14.1667V7.08341C2.7832 4.58341 4.0332 2.91675 6.94987 2.91675H13.6165C16.5332 2.91675 17.7832 4.58341 17.7832 7.08341Z"
+                            stroke="#292D32"
+                            stroke-width="1.5"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.3613 11.4167H13.3688"
+                            stroke="#292D32"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M13.3613 13.9167H13.3688"
+                            stroke="#292D32"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10.2793 11.4167H10.2868"
+                            stroke="#292D32"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10.2793 13.9167H10.2868"
+                            stroke="#292D32"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.19529 11.4167H7.20278"
+                            stroke="#292D32"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M7.19529 13.9167H7.20278"
+                            stroke="#292D32"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="dash-title">New Booking</div>
+                    </div>
+                    <div class="dash-data">600</div>
+                  </div>
+                  <div class="down">Update: March 22, 2024</div>
+                </div>
+                <div class="dash-card">
+                  <div class="top">
+                    <div class="d-flex gap-2 align-items-center">
+                      <div class="dash-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="21"
+                          height="20"
+                          viewBox="0 0 21 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.3659 15.0001H4.24091C3.04924 15.0001 2.44922 14.4001 2.44922 13.2084V3.45844C2.44922 2.26677 3.04924 1.66675 4.24091 1.66675H7.82423C9.0159 1.66675 9.61587 2.26677 9.61587 3.45844V5.00008"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M15.2588 7.01665V16.3167C15.2588 17.6583 14.5922 18.3333 13.2505 18.3333H8.38384C7.04217 18.3333 6.36719 17.6583 6.36719 16.3167V7.01665C6.36719 5.67499 7.04217 5 8.38384 5H13.2505C14.5922 5 15.2588 5.67499 15.2588 7.01665Z"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.9492 5.00008V3.45844C11.9492 2.26677 12.5492 1.66675 13.7409 1.66675H17.3242C18.5158 1.66675 19.1159 2.26677 19.1159 3.45844V13.2084C19.1159 14.4001 18.5158 15.0001 17.3242 15.0001H15.2575"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.11719 9.16675H12.4505"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M9.11719 11.6667H12.4505"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M10.7832 18.3333V15.8333"
+                            stroke="black"
+                            stroke-width="1.3"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="dash-title">Available Rooms</div>
+                    </div>
+                    <div class="dash-data">600</div>
+                  </div>
+                  <div class="down">Update: March 22, 2024</div>
+                </div>
+              </div>
+              <div class="dash-details">
+                <div class="chart-container">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-3"
+                  >
+                    <div class="dash-title">Revenue Statistics</div>
+                    <select class="select">
+                      <option value="this mounth">This mounth</option>
+                      <option value="this mounth">Prev mounth</option>
+                      <option value="this mounth">Next mounth</option>
+                    </select>
+                  </div>
+                  <div class="chart-wrapper">
+                    <canvas id="chart"></canvas>
+                  </div>
+                </div>
+                <div class="booking-date-container">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-3"
+                  >
+                    <div class="dash-title">Booking Schedule</div>
+                    <div class="dash-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="24"
+                        viewBox="0 0 25 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M8.7832 2V5"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.7832 2V5"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.2832 9.09009H21.2832"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M21.7832 8.5V17C21.7832 20 20.2832 22 16.7832 22H8.7832C5.2832 22 3.7832 20 3.7832 17V8.5C3.7832 5.5 5.2832 3.5 8.7832 3.5H16.7832C20.2832 3.5 21.7832 5.5 21.7832 8.5Z"
+                          stroke="#292D32"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.4789 13.7H16.4879"
+                          stroke="#292D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M16.4789 16.7H16.4879"
+                          stroke="#292D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12.7797 13.7H12.7886"
+                          stroke="#292D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12.7797 16.7H12.7886"
+                          stroke="#292D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.07654 13.7H9.08552"
+                          stroke="#292D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M9.07654 16.7H9.08552"
+                          stroke="#292D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <input type="text" name="date" id="booking-date" hidden />
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/plugins/easepick1.2.1.umd.min.js"></script>
+    <script src="./assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/plugins/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/plugins/owl.carousel.min.js"></script>
+    <script src="./assets/js/plugins/chart-4.4.4.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+      const ctx = document.getElementById("chart");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+          ],
+          datasets: [
+            {
+              label: "Revenue",
+              data: [2100, 1000, 2000, 4500, 3000, 2500],
+              backgroundColor: "#e7cf85",
+              hoverBackgroundColor: "#e7cf85",
+              borderRadius: 30,
+              barThickness: 20,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              xAlign: "center",
+              yAlign: "bottom",
+              displayColors: false,
+              borderWidth: 1,
+              borderColor: "#ededed",
+              backgroundColor: "#fff", // Customize tooltip background color
+              borderRadius: 30,
+              titleColor: "#A0A0A0", // Title text color
+              titleAlign: "center",
+              titleFont: {
+                size: 18,
+                weight: "normal",
+                lineHeight: "140%",
+                style: "normal",
+                family: "'Catamaran', sans-serif",
+              },
+              padding: 10,
+              bodyColor: "#000000",
+              bodyAlign: "center",
+              bodyFont: {
+                size: 32,
+                weight: "bold",
+                lineHeight: "130%",
+                style: "normal",
+                family: "'Catamaran', sans-serif",
+              },
+              callbacks: {
+                title: function (tooltipItems) {
+                  // Customize tooltip title
+                  const index = tooltipItems[0].dataIndex;
+                  const months = [
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May",
+                    "Jun",
+                    "Jul",
+                    "Aug",
+                    "Sep",
+                    "Oct",
+                    "Nov",
+                    "Dec",
+                  ];
+                  return `${months[index]} ${23}, ${2024}`;
+                },
+                label: function (context) {
+                  let value = context.raw;
+                  return `$${value}`;
+                },
+              },
+            },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 5000,
+              ticks: {
+                callback: function (value) {
+                  return "$" + value; // Add dollar sign
+                },
+              },
+              font: {
+                size: 18,
+                weight: "normal",
+                lineHeight: "140%",
+                style: "normal",
+                family: "'Catamaran', sans-serif",
+              },
+              border: {
+                color: "#ededed",
+              },
+              grid: {
+                display: true,
+                color: "#ededed",
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+                offset: true
+              },
+              border: {
+                color: "#ededed",
+              },
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

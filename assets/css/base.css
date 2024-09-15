@@ -1,0 +1,76 @@
+:root {
+  --bg-pri: #f7f7f7;
+  --bg-sec: #ffffff;
+
+  --text-pri: #000;
+  --text-placeholder: #bfbfbf;
+
+  --accent-pri: #e7cf85;
+
+  --white: #fff;
+  --black: #000;
+
+  --border: #ededed;
+  --catamaran-font: "Catamaran", sans-serif;
+  --lexend-font: "Lexend", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 13px;
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-pri);
+  color: var(--text-pri);
+  font-family: var(--catamaran-font);
+  font-optical-sizing: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

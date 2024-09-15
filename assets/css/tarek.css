@@ -1,0 +1,590 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+/* google font */
+
+.sign-in-content-wrapper {
+  width: 100%;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-img-area {
+  width: 48.375px;
+  height: 48.375px;
+}
+.logo-img-area img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.logo-img-area p {
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.2px;
+}
+.sign-up-col {
+  background-color: #fff;
+}
+.sign-up-col,
+.sign-in-text-col {
+  padding: 52.5px 100px;
+  height: 100vh;
+}
+.sign-in-text-col {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  padding: 16px;
+  border-radius: 12px;
+  background: #f2f2f2;
+}
+.user-box .password-toggle-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border: none;
+  outline: none;
+}
+
+.user-box .password-toggle-icon:focus {
+  outline: none;
+}
+.user-box span {
+  cursor: pointer;
+}
+.user-box input {
+  border: none;
+  flex-grow: 1;
+  background-color: inherit;
+}
+.user-box input::placeholder {
+  color: #a0a0a0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.2px;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 50%;
+}
+.sign-in-main-area {
+  display: flex;
+  flex-direction: column;
+  padding-right: 137px;
+  justify-content: center;
+  gap: 32px;
+  padding-top: 151px;
+}
+.sign-in-main-area form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.sign-in-main-area h1 {
+  color: #000;
+  font-family: Catamaran;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.6rem;
+  letter-spacing: -0.64px;
+  margin-bottom: 8px;
+}
+.remember-forgot-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remember-forgot-wrapper label,
+.remember-forgot-wrapper button {
+  color: #000;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.2px;
+}
+.remember-forgot-wrapper button {
+  color: #d2bc79;
+  text-align: right;
+  border: none;
+  background-color: var(--white);
+}
+.remember-forgot-wrapper button:hover {
+  color: #f0b609;
+}
+.tm-sign-in-btn {
+  color: #000;
+  text-align: center;
+  padding: 17.5px;
+  font-family: Catamaran;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.3rem;
+  letter-spacing: 0.3px;
+  border-radius: 12px;
+  background: #e7cf85;
+  border: none;
+}
+
+.or-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.or-wrapper p {
+  color: #a0a0a0;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.2px;
+  text-wrap: nowrap;
+}
+.or-line {
+  background: #e6e6e6;
+  height: 1px;
+  width: 100%;
+}
+.social-media-login-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.social-media-login-wrapper a {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  color: #000;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+  width: 100%;
+  justify-content: center;
+}
+.form-last-p {
+  color: #575757;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.2px;
+}
+.form-last-p a {
+  color: #d2bc79;
+}
+
+.tm-owl-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+.sign-in-text-col-img-area {
+  height: 338.621px;
+}
+.sign-in-text-col-img-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.tm-owl-item h3 {
+  color: #e7cf85;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Catamaran;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.75rem;
+  letter-spacing: -1.2px;
+}
+.tm-owl-item p {
+  color: var(--Neutral-50, #fff);
+  text-align: center;
+  font-family: Catamaran;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.575rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+}
+.reset-p {
+  color: #718096;
+  font-family: Catamaran;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.2px;
+  letter-spacing: 0.3px;
+  margin-top: -20px;
+}
+.reset-h1 {
+  color: #111827;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Catamaran;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.6rem;
+  letter-spacing: -0.64px;
+}
+
+/* modal */
+.modal-content {
+  padding: 32px;
+}
+.modal-header {
+  border-bottom: 0px;
+}
+.tm-modal-body {
+  display: flex;
+  flex-direction: column;
+}
+.modal-header .btn-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+.tm-modal-body h2 {
+  color: #111827;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Catamaran;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.95rem;
+  letter-spacing: -0.48px;
+  margin-bottom: 12px;
+}
+.tm-modal-body p {
+  color: #718096;
+  font-family: Catamaran;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 32px;
+}
+.return-login-link {
+  color: #d2bc79;
+  font-family: Catamaran;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4rem;
+  letter-spacing: 0.3px;
+}
+.tm-modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.tm-continue-btn {
+  border: none;
+  border-radius: 12px;
+  background: #e7cf85;
+  padding: 16px;
+  color: #000;
+  text-align: center;
+  font-family: Catamaran;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.3px;
+}
+.tm-modal-body-success h2,
+.tm-modal-body-success p {
+  text-align: center;
+}
+.success-reset-img {
+  margin: 0 auto;
+  width: 146.5px;
+  height: 128px;
+  object-fit: cover;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: #808080;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #fff;
+}
+
+.user-box-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+.user-box-wrapper .user-box {
+  width: 100%;
+}
+.remember-forgot-wrapper label a {
+  color: #d2bc79;
+}
+
+/* dashboard-booking start */
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+    font-size: 33px;
+}
+
+.tm-breadcumb-item,
+.tm-breadcumb-item a{
+    color: #000;
+    font-family: Catamaran;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.3px; 
+    margin-top: 8px;
+}
+.breadcrumb-item.active {
+    color: #000;
+}
+.addbooking-form-area{
+  padding: 16px;
+  border-radius: 8px;
+border: 1px solid #EDEDED;
+}
+.addbooking-form-area form{
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+.addbooking-form-area form label{
+  color: #7B7B7B;
+  font-family: Lexend;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19.6px;
+  letter-spacing: -0.28px;
+  margin-bottom: 8px;
+}
+.addbooking-form-area .nice-select {
+  color: var(--Color-Dark-500, #030C09);
+  font-family: Lexend;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.32px;
+}
+.addbooking-form-area .nice-select:after {
+  border-bottom: 1.5px solid #030C09;
+  border-right: 1.5px solid #030C09;
+  content: '';
+  display: block;
+  height: 8px;
+  width: 8px;
+}
+.addbooking-form-area .form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #999;
+  outline: 0;
+  box-shadow: none !important;
+}
+.addbooking-form-area input{
+padding: 9px 16px;
+}
+.guest-details{
+  margin-bottom: 8px;
+  color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: Catamaran;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: -0.4px;
+}
+.tm-booking-btn-wrapper{
+  margin-top: 8px;
+  display: flex;
+  gap: 16px;
+align-items: center;
+justify-content: end;
+}
+.tm-booking-btn-wrapper button{
+border: none;
+padding: 12px 26px;
+background-color: inherit;
+color: #030C09;
+text-align: center;
+font-family: Lexend;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: -0.32px;
+border-radius: 8px;
+border: 1px solid  #EDEDED;
+}
+.tm-booking-btn-wrapper button:last-child{
+color: #000;
+background: #E7CF85;
+min-width: 150px;
+}
+@media only screen and (min-width: 201px) and (max-width: 360px) {
+  .tm-booking-btn-wrapper button:last-child {
+    min-width: 120px;
+}
+.tm-booking-btn-wrapper {
+  flex-direction: column;
+}
+}
+
+/* dashboard-booking end */
+
+@media only screen and (min-width: 1301px) and (max-width: 1600px) {
+  .sign-in-main-area {
+    padding-right: 0;
+    padding-top: 75px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+  .user-box-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .sign-in-main-area {
+    padding-right: 0;
+    padding-top: 75px;
+  }
+  .sign-in-text-col {
+    gap: 21px;
+  }
+  .sign-up-col,
+  .sign-in-text-col {
+    padding: 52.5px 68px;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 992px) {
+  .sign-in-section .row {
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+  }
+  .sign-in-main-area {
+    display: flex;
+    padding-right: 0px;
+    padding-top: 70px;
+  }
+  .sign-in-text-col {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .user-box-wrapper {
+    gap: 12px;
+    flex-direction: column;
+  }
+  .sign-in-section .row {
+    --bs-gutter-x: 0;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+  }
+  .sign-up-col,
+  .sign-in-text-col {
+    padding: 25.5px 24px;
+    height: 70vh;
+  }
+  .sign-in-main-area {
+    padding-right: 0px;
+    gap: 20px;
+    padding-top: 40px;
+  }
+  .sign-in-main-area h1 {
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+  }
+  .user-box {
+    padding: 13px;
+  }
+  .sign-in-main-area form {
+    gap: 12px;
+  }
+  .tm-sign-in-btn {
+    padding: 12.5px;
+  }
+  .social-media-login-wrapper a {
+    padding: 12px;
+    gap: 6px;
+    font-size: 0.9rem;
+  }
+  .social-media-login-wrapper {
+    gap: 12px;
+  }
+  .sign-in-text-col {
+    gap: 20px;
+  }
+  .tm-owl-item h3 {
+    font-size: 2rem;
+  }
+  .tm-owl-item {
+    gap: 15px;
+  }
+  .tm-owl-item p {
+    font-size: 1rem;
+  }
+  .sign-in-text-col-img-area {
+    height: 264.621px;
+  }
+  /* modal */
+  .tm-modal-body form {
+    gap: 15px;
+  }
+
+  /* booking */
+  .addbooking-form-area .nice-select {
+    font-size: 14px;
+}
+.guest-details {
+  margin-bottom: 1px;
+  font-size: 18px;
+}
+.addbooking-form-area .nice-select:after {
+  border-bottom: 1px solid #030C09;
+  border-right: 1px solid #030C09;
+  content: '';
+  display: block;
+  height: 6px;
+  width: 6px;
+}
+}
