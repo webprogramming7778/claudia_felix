@@ -67,6 +67,11 @@
   height: auto;
   transform: scale(1);
 }
+
+.date-input + .container.show {
+  left: 1110.84px !important;
+}
+
 .booking-date-container .container.show {
   box-shadow: none !important;
 }
@@ -259,13 +264,19 @@
   pointer-events: none;
   transform: scale(0.7);
 }
+
+.container.inline .calendar > .daynames-row,
+.container.inline .calendar > .days-grid {
+  column-gap: 1.5rem !important;
+  row-gap: 1rem !important;
+}
+
 .calendar > .daynames-row,
 .calendar > .days-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  column-gap: 1.5rem;
-  row-gap: 1rem;
 }
+
 .calendar > .daynames-row > .day,
 .calendar > .daynames-row > .dayname,
 .calendar > .days-grid > .day,

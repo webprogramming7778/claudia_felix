@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Booking</title>
+    <title>Add guest</title>
     <!-- google font start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,7 +55,7 @@
               </svg>
               <span>Dashboard</span>
             </a>
-            <a href="./booking.html" class="nav-item active">
+            <a href="./booking.html" class="nav-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -186,7 +186,7 @@
               </svg>
               <span>Orders</span>
             </a>
-            <a href="./guests.html" class="nav-item">
+            <a href="./guests.html" class="nav-item active">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -435,17 +435,17 @@
             </button>
           </div>
           <main>
-            <h2 class="section-title">Booking</h2>
+            <h2 class="section-title">Add New Guest</h2>
             <nav aria-label="breadcrumb tm-breadcumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item tm-breadcumb-item">
-                  <a href="booking.html">Booking</a>
+                  <a href="./guests.html">Guest</a>
                 </li>
                 <li
                   class="breadcrumb-item tm-breadcumb-item active"
                   aria-current="page"
                 >
-                  Add New Booking
+                  Add New Guest
                 </li>
               </ol>
             </nav>
@@ -453,82 +453,7 @@
               <form class="" action="">
                 <div class="tm-form-input-wrapper row">
                   <div class="col-md-6">
-                    <label for="room">Room Number</label>
-                    <select class="select wide">
-                      <option data-display="108">108</option>
-                      <option value="1">109</option>
-                      <option value="2">110</option>
-                      <option value="3">111</option>
-                      <option value="4">112</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="room">Room Type</label>
-                    <select class="select wide">
-                      <option data-display="Single">Single</option>
-                      <option value="1">Double</option>
-                      <option value="2">Premium</option>
-                      <option value="3">Deluxe</option>
-                      <option value="4">Suite</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="tm-form-input-wrapper row">
-                  <div class="col-md-6">
-                    <label for="room-date">Date</label>
-                    <div class="room-date-input-container">
-                      <input id="room-date" placeholder="Date" />
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="24"
-                        viewBox="0 0 25 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M3.39258 7.5C3.39258 5.29086 5.18344 3.5 7.39258 3.5H17.3926C19.6017 3.5 21.3926 5.29086 21.3926 7.5V18C21.3926 20.2091 19.6017 22 17.3926 22H7.39258C5.18344 22 3.39258 20.2091 3.39258 18V7.5Z"
-                          stroke="#030C09"
-                          stroke-width="1.5"
-                        />
-                        <path
-                          d="M3.39258 9H21.3926"
-                          stroke="#030C09"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                        />
-                        <path
-                          d="M8.39258 2L8.39258 5"
-                          stroke="#030C09"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M16.3926 2V5"
-                          stroke="#030C09"
-                          stroke-width="1.5"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <circle cx="12.3926" cy="15" r="1" fill="#030C09" />
-                        <circle cx="16.3926" cy="15" r="1" fill="#030C09" />
-                        <circle cx="8.39258" cy="15" r="1" fill="#030C09" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="room">Guest</label>
-                    <select class="select wide">
-                      <option data-display="2 Adults">2 Adults</option>
-                      <option value="1">1 Adults</option>
-                      <option value="2">3 Adults</option>
-                    </select>
-                  </div>
-                </div>
-                <h3 class="guest-details">Guest Details</h3>
-                <div class="tm-form-input-wrapper row">
-                  <div class="col-md-6">
-                    <label for="room">Name</label>
+                    <label for="room">Guest Name</label>
                     <input
                       type="text"
                       class="form-control"
@@ -538,7 +463,7 @@
                     />
                   </div>
                   <div class="col-md-6">
-                    <label for="room">Email</label>
+                    <label for="room">Email Address</label>
                     <input
                       type="email"
                       class="form-control"
@@ -546,6 +471,26 @@
                       placeholder="Enter your email"
                       required
                     />
+                  </div>
+                </div>
+                <div class="tm-form-input-wrapper row">
+                  <div class="col-md-6">
+                    <label for="room-date">Mobile Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mobile-number"
+                      placeholder="Enter your number"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="room">Guest</label>
+                    <select class="select wide">
+                      <option data-display="2 Adults">2 Adults</option>
+                      <option value="1">1 Adults</option>
+                      <option value="2">3 Adults</option>
+                    </select>
                   </div>
                 </div>
                 <div class="tm-booking-btn-wrapper">

@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Owl Carousel
   const signOwlCarousel = $(".sign-owl-carousel");
 
-  if (signOwlCarousel) {
+  if (signOwlCarousel.length > 0) {
     $(".sign-owl-carousel").owlCarousel({
       loop: true,
       margin: 10,
@@ -137,4 +137,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   $(".select").niceSelect();
+
+  // room date input
+  const roomDate = document.getElementById("room-date")
+  if(roomDate && easepick){
+    const picker = new easepick.create({
+      element: roomDate,
+      css: ["./assets/css/plugins/easepick1.2.1.css"],
+      plugins: [],
+      format: "MMM DD, YYYY",
+      setup(picker) {
+        picker.on('select', (e) => {
+          console.log(e.detail.date);
+        });
+      },
+    });
+  }
 });
