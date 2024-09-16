@@ -311,16 +311,22 @@
 }
 
 /* scrollbar styles */
+.nav-links{
+  padding-right: 10px;
+}
+.nav-links::-webkit-scrollbar,
 .people-chat-section::-webkit-scrollbar,
 .chat::-webkit-scrollbar {
   width: 5px;
 }
 /* Track */
+.nav-links::-webkit-scrollbar-track,
 .people-chat-section::-webkit-scrollbar-track,
 .chat::-webkit-scrollbar-track {
   background: transparent;
 }
 /* Handle */
+.nav-links::-webkit-scrollbar-thumb,
 .people-chat-section::-webkit-scrollbar-thumb,
 .chat::-webkit-scrollbar-thumb {
   background: var(--accent-pri);

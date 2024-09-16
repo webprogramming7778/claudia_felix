@@ -68,7 +68,7 @@
   transform: scale(1);
 }
 
-.date-input + .container.show {
+.container.range-plugin.show {
   left: 1110.84px !important;
 }
 
