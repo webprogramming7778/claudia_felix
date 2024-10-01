@@ -136,7 +136,7 @@
 .nav-links .nav-item.active {
   background-color: var(--accent-pri);
 }
-.nav-links .settings {
+.nav-links .bottom-nav-item {
   margin-top: auto;
 }
 /* sidebar navlinks styles end */

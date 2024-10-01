@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add guest</title>
+    <title>Current Service</title>
     <!-- google font start -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,7 @@
     />
     <!-- google font end -->
     <!-- css file -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -55,7 +56,7 @@
               </svg>
               <span>Dashboard</span>
             </a>
-            <a href="./booking.html" class="nav-item">
+            <a href="./booking.html" class="nav-item active">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -186,7 +187,7 @@
               </svg>
               <span>Orders</span>
             </a>
-            <a href="./guests.html" class="nav-item active">
+            <a href="./guests.html" class="nav-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -435,69 +436,60 @@
             </button>
           </div>
           <main>
-            <h2 class="section-title">Add New Guest</h2>
-            <nav aria-label="breadcrumb tm-breadcumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item tm-breadcumb-item">
-                  <a href="./guests.html">Guest</a>
-                </li>
-                <li
-                  class="breadcrumb-item tm-breadcumb-item active"
-                  aria-current="page"
-                >
-                  Add New Guest
-                </li>
-              </ol>
-            </nav>
-            <div class="addbooking-form-area">
-              <form class="" action="">
-                <div class="tm-form-input-wrapper row">
-                  <div class="col-md-6">
-                    <label for="room">Guest Name</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Enter your name"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="room">Email Address</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Enter your email"
-                      required
-                    />
-                  </div>
+            <h2 class="section-title">Current Service</h2>
+            <div class="tm-services-section">
+                <div class="tm-service-card">
+                    <img src="assets/images/egg.jpg" alt="" srcset="">
+                    <h3>Food & 
+                        Beverages</h3>
                 </div>
-                <div class="tm-form-input-wrapper row">
-                  <div class="col-md-6">
-                    <label for="room-date">Mobile Number</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="mobile-number"
-                      placeholder="Enter your number"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="room">Guest</label>
-                    <select class="select wide">
-                      <option data-display="2 Adults">2 Adults</option>
-                      <option value="1">1 Adults</option>
-                      <option value="2">3 Adults</option>
-                    </select>
-                  </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/yoga.jpg" alt="" srcset="">
+                    <h3>Activities</h3>
                 </div>
-                <div class="tm-booking-btn-wrapper">
-                  <button type="reset">Cancel</button>
-                  <button type="submit">Add</button>
+                <div class="tm-service-card">
+                    <img src="assets/images/housekeeping.jpg" alt="" srcset="">
+                    <h3>Housekeeping</h3>
                 </div>
-              </form>
+                <div class="tm-service-card">
+                    <img src="assets/images/egg.jpg" alt="" srcset="">
+                    <h3>Food & 
+                        Beverages</h3>
+                </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/yoga.jpg" alt="" srcset="">
+                    <h3>Activities</h3>
+                </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/housekeeping.jpg" alt="" srcset="">
+                    <h3>Housekeeping</h3>
+                </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/egg.jpg" alt="" srcset="">
+                    <h3>Food & 
+                        Beverages</h3>
+                </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/yoga.jpg" alt="" srcset="">
+                    <h3>Activities</h3>
+                </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/housekeeping.jpg" alt="" srcset="">
+                    <h3>Housekeeping</h3>
+                </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/egg.jpg" alt="" srcset="">
+                    <h3>Food & 
+                        Beverages</h3>
+                </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/yoga.jpg" alt="" srcset="">
+                    <h3>Activities</h3>
+                </div>
+                <div class="tm-service-card">
+                    <img src="assets/images/housekeeping.jpg" alt="" srcset="">
+                    <h3>Housekeeping</h3>
+                </div>
             </div>
           </main>
         </div>
@@ -506,7 +498,7 @@
     <script src="./assets/js/plugins/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/plugins/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/plugins/jquery.nice-select.min.js"></script>
-    <script src="./assets/js/plugins/easepick1.2.1.umd.min.js"></script>
+    <script src="./assets/js/plugins/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
