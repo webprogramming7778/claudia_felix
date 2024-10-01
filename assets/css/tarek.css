@@ -635,7 +635,12 @@ object-fit: cover;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+  transition: .3s ease-in-out;
 }
+.tm-service-card:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 .tm-service-card::before {
   content: "";
   position: absolute;
