@@ -73,36 +73,53 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // easepick for table range date picker
-  const dateInput = document.querySelector(".date-input")
-  if(dateInput && easepick){
+  const dateInput = document.querySelector(".date-input");
+
+  if(dateInput && typeof flatpickr !== "undefined"){
+    flatpickr(dateInput, {
+      mode: "range",
+      dateFormat: "M d",
+    });
+  }
+
+
+  if (dateInput && easepick) {
     const today = new Date();
-  
+
     const tenDaysLater = new Date(today);
     tenDaysLater.setDate(today.getDate() + 10);
-    
+
     function formatDate(date) {
-      return date.toLocaleDateString("en-US", { month: "short", day: "2-digit" });
+      return date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+      });
     }
-    
+
     const picker = new easepick.create({
       element: dateInput,
-      css: ["./assets/css/plugins/easepick1.2.1.css"],
-      plugins: ["RangePlugin"],
+      css: [
+        "./assets/css/plugins/easepick1.2.1.css",
+      ],
+      plugins: ["RangePlugin", "PresetPlugin"],
       format: "MMM DD",
+      PresetPlugin: {
+        position: "left",
+      },
     });
 
     dateInput.value = `${formatDate(today)} - ${formatDate(tenDaysLater)}`;
   }
 
-  const bookingDate = document.getElementById("booking-date")
-  if(bookingDate && easepick){
+  const bookingDate = document.getElementById("booking-date");
+  if (bookingDate && easepick) {
     const picker = new easepick.create({
       element: bookingDate,
       css: ["./assets/css/plugins/easepick1.2.1.css"],
       plugins: [],
       inline: true,
       setup(picker) {
-        picker.on('select', (e) => {
+        picker.on("select", (e) => {
           console.log(e.detail.date);
         });
       },
@@ -136,18 +153,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  $(".select").niceSelect();
+  const select = $(".select");
+
+  if (select.length > 0) {
+    select.niceSelect();
+  }
 
   // room date input
-  const roomDate = document.getElementById("room-date")
-  if(roomDate && easepick){
+  const roomDate = document.getElementById("room-date");
+  if (roomDate && easepick) {
     const picker = new easepick.create({
       element: roomDate,
       css: ["./assets/css/plugins/easepick1.2.1.css"],
       plugins: [],
       format: "MMM DD, YYYY",
       setup(picker) {
-        picker.on('select', (e) => {
+        picker.on("select", (e) => {
           console.log(e.detail.date);
         });
       },

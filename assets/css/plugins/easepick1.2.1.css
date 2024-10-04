@@ -68,9 +68,9 @@
   transform: scale(1);
 }
 
-.container.range-plugin.show {
+/* .container.range-plugin.show {
   left: 1110.84px !important;
-}
+} */
 
 .booking-date-container .container.show {
   box-shadow: none !important;
@@ -597,6 +597,7 @@
 }
 .container.preset-plugin main.preset-left .preset-plugin-container,
 .container.preset-plugin main.preset-right .preset-plugin-container {
+  display: none;
   grid-row: span 2;
   width: 130px;
 }
