@@ -133,8 +133,11 @@
 .nav-links .nav-item.active {
   background-color: var(--accent-pri);
 }
-.nav-links .settings {
+.nav-links .bottom-nav-item {
   margin-top: auto;
+  border: none;
+  outline: none;
+  background: none;
 }
 /* sidebar navlinks styles end */
 
