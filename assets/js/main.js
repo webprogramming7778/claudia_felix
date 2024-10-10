@@ -74,44 +74,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // table filter date input start
   const dateInput = document.querySelector(".date-input");
-  
+
   if (dateInput && typeof flatpickr !== "undefined") {
     const today = new Date();
-    
+
     const tenDaysLater = new Date(today);
     tenDaysLater.setDate(today.getDate() + 10);
-    
+
     function formatDate(date) {
       return date.toLocaleDateString("en-US", {
         month: "short",
         day: "2-digit",
       });
     }
-    
+
     flatpickr(dateInput, {
       mode: "range",
       dateFormat: "M d",
     });
-    
+
     dateInput.value = `${formatDate(today)} to ${formatDate(tenDaysLater)}`;
   }
   // table filter date input end
-
-  const bookingDate = document.getElementById("booking-date");
-  if (bookingDate && easepick) {
-    const picker = new easepick.create({
-      element: bookingDate,
-      css: ["./assets/css/plugins/easepick1.2.1.css"],
-      plugins: [],
-      inline: true,
-      setup(picker) {
-        picker.on("select", (e) => {
-          console.log(e.detail.date);
-        });
-      },
-    });
-  }
-
   // table select
   const tables = document.querySelectorAll("table.table");
 
@@ -181,4 +165,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   // sidebar open and close end
+
+  // settings page date of birth
+  const dateOfBirth = document.getElementById("dateOfBirth");
+
+  if (dateOfBirth && typeof flatpickr !== "undefined") {
+    flatpickr(dateOfBirth, {});
+  }
 });

@@ -448,7 +448,7 @@
                 </div>
                 <div class="form-group">
                   <label for="my-input">Nationality*</label>
-                  <select class="tm-dropdown" name="" required>
+                  <select class="select" name="" required>
                     <option value="">Select Nationality</option>
                     <option value="USA">USA</option>
                     <option value="UK">UK</option>
@@ -459,11 +459,11 @@
               <div class="form-field-wrapper">
                 <div class="form-group">
                   <label for="my-input">Date of Birth</label>
-                  <input class="form-control" type="date" name="" required />
+                  <input class="form-control" type="text" id="dateOfBirth" name="" required />
                 </div>
                 <div class="form-group">
                   <label for="my-input">Gender</label>
-                  <select class="tm-dropdown" name="" required>
+                  <select class="select" name="" required>
                     <option value="">Select Gender</option>
                     <option value="USA">Male</option>
                     <option value="UK">Female</option>
@@ -481,24 +481,6 @@
                   placeholder="Email Address"
                 />
               </div>
-              <!-- <div class="form-field-wrapper">
-                    <div class="form-group">
-                        <label for="my-input">Password</label>
-                        <input class="form-control" type="password" name="" required placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="my-input">Re-type Password</label>
-                        <input class="form-control" type="password" name="" required placeholder="Password">
-                    </div>
-                </div>
-                <div class="tm-settings-img-upload-area">
-                    <div class="tm-settings-img-space">
-                        <img src="assets/images/user-profile.png" alt="" id="previewImage" srcset="">
-                    </div>
-                    <div class="input-group">
-                        <input type="file" class="form-control" id="inputGroupFile01">
-                    </div>
-                </div> -->
 
               <button class="tm-dashboard-btn" type="submit">Update</button>
             </form>
@@ -508,27 +490,5 @@
     </div>
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".tm-dropdown").niceSelect();
-      });
-      document.addEventListener("DOMContentLoaded", function () {
-        const fileInput = document.getElementById("inputGroupFile01");
-        const previewImage = document.getElementById("previewImage");
-
-        if (fileInput && previewImage) {
-          fileInput.addEventListener("change", function (event) {
-            const file = event.target.files[0];
-            if (file) {
-              const reader = new FileReader();
-              reader.onload = function (e) {
-                previewImage.src = e.target.result;
-              };
-              reader.readAsDataURL(file);
-            }
-          });
-        }
-      });
-    </script>
   </body>
 </html>
