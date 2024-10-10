@@ -129,22 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
     select.niceSelect();
   }
 
-  // room date input
-  const roomDate = document.getElementById("room-date");
-  if (roomDate && easepick) {
-    const picker = new easepick.create({
-      element: roomDate,
-      css: ["./assets/css/plugins/easepick1.2.1.css"],
-      plugins: [],
-      format: "MMM DD, YYYY",
-      setup(picker) {
-        picker.on("select", (e) => {
-          console.log(e.detail.date);
-        });
-      },
-    });
-  }
-
   // sidebar open and close start
   const sidebarOpenBtn = document.getElementById("sidebar-open-btn");
   const sidebarCloseBtn = document.getElementById("sidebar-close-btn");
@@ -165,6 +149,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
   // sidebar open and close end
+
+  // sidebar dropdown start
+  const subNavTrigger = document.querySelectorAll(".sub-nav-trigger");
+
+  if (subNavTrigger.length > 0) {
+    subNavTrigger.forEach((trigger) => {
+      trigger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        
+        window.location.href = this.dataset.href
+      });
+    });
+  }
+  // sidebar dropdown end
 
   // settings page date of birth
   const dateOfBirth = document.getElementById("dateOfBirth");
