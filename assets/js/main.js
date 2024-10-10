@@ -75,13 +75,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // easepick for table range date picker
   const dateInput = document.querySelector(".date-input");
 
-  if(dateInput && typeof flatpickr !== "undefined"){
+  if (dateInput && typeof flatpickr !== "undefined") {
     flatpickr(dateInput, {
       mode: "range",
       dateFormat: "M d",
     });
   }
-
 
   if (dateInput && easepick) {
     const today = new Date();
@@ -98,9 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const picker = new easepick.create({
       element: dateInput,
-      css: [
-        "./assets/css/plugins/easepick1.2.1.css",
-      ],
+      css: ["./assets/css/plugins/easepick1.2.1.css"],
       plugins: ["RangePlugin", "PresetPlugin"],
       format: "MMM DD",
       PresetPlugin: {
@@ -174,4 +171,25 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+
+  // sidebar open and close start
+  const sidebarOpenBtn = document.getElementById("sidebar-open-btn");
+  const sidebarCloseBtn = document.getElementById("sidebar-close-btn");
+  const sidebar = document.querySelector(".sidebar-container");
+  const mainContent = document.querySelector(".main-content")
+
+  if (sidebarOpenBtn && sidebarCloseBtn && sidebar && mainContent) {
+    sidebarOpenBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      sidebar.classList.add("show");
+      mainContent.classList.add("scroll-hide")
+    });
+    
+    sidebarCloseBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      sidebar.classList.remove("show");
+      mainContent.classList.remove("scroll-hide")
+    });
+  }
+  // sidebar open and close end
 });

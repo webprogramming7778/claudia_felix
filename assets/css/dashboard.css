@@ -9,16 +9,55 @@
 .sidebar-container {
   --width: 235px;
   --left-offset: -235px;
+  background-color: var(--bg-pri);
   position: absolute;
   min-width: var(--width);
   max-width: var(--width);
   left: var(--left-offset);
   height: 100vh;
-  overflow-y: hidden;
-  z-index: 1000;
+  z-index: 110;
   transition: left 300ms ease;
   flex-shrink: 0;
 }
+.sidebar-container.show {
+  left: 0;
+}
+#sidebar-open-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  border-radius: 8px;
+  width: 2.75rem;
+  height: 2.75rem;
+  background: var(--accent-pri);
+}
+#sidebar-open-btn svg {
+  width: 50%;
+  height: 50%;
+}
+
+#sidebar-close-btn {
+  display: block;
+  position: absolute;
+  border: none;
+  background: none;
+  top: 0;
+  right: -18%;
+  margin-top: 10px;
+}
+
+#sidebar-close-btn svg {
+  width: 30px;
+  height: 30px;
+}
+
+.sidebar-container:not(.show) #sidebar-close-btn {
+  display: none;
+}
+
 .sidebar {
   position: relative;
   display: flex;
@@ -49,12 +88,15 @@
   background-color: var(--bg-sec);
   border-radius: 1.5rem;
 }
+.main-content.scroll-hide {
+  overflow: hidden;
+}
 .main-content main {
   width: 100%;
   padding: 1.5rem;
 }
 .overflow-container .main-content main {
-  overflow-y: auto !important;
+  overflow-y: auto;
   scrollbar-width: none;
 }
 .topbar {
@@ -62,7 +104,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 100;
   background: var(--bg-sec);
   padding: 1rem 1.5rem;
   padding-top: 1.5rem;
@@ -160,7 +202,7 @@
   object-fit: cover;
   border-radius: 9999px;
 }
-.user-dropdown .user-profile > span{
+.user-dropdown .user-profile > span {
   display: none;
 }
 .user-dropdown .user-profile .user-name {
@@ -294,7 +336,6 @@
 
 /* orders dashboard tabs styles start */
 .order-tabs {
-  
   padding-left: 0;
   display: flex;
   align-items: center;
@@ -336,9 +377,6 @@
   font-weight: 400;
   line-height: 140%; /* 25.2px */
   letter-spacing: 0.3px;
-}
-.dashboard-wrapper {
-  padding-right: 3rem;
 }
 .dash-card-container {
   display: grid;
@@ -508,7 +546,7 @@
 .fc-h-event .fc-event-title {
   color: var(--text-pri);
 }
-.fc .fc-button-primary:focus{
+.fc .fc-button-primary:focus {
   box-shadow: none;
 }
 /* Bookings calender styles end */
@@ -524,7 +562,7 @@
 
 /* small screen */
 @media only screen and (min-width: 480px) {
-  .order-tabs{
+  .order-tabs {
     padding-top: 1.25rem;
     padding-left: 1.25rem;
     gap: 1rem;
@@ -537,7 +575,7 @@
 
 /* medium screen */
 @media only screen and (min-width: 768px) {
-  .user-dropdown .user-profile > span{
+  .user-dropdown .user-profile > span {
     display: block;
   }
 }
@@ -548,10 +586,19 @@
     position: static;
     display: block;
   }
-  .main-container{
+  #sidebar-close-btn {
+    display: none;
+  }
+  #sidebar-open-btn {
+    display: none;
+  }
+  #sidebar-close-btn {
+    display: none;
+  }
+  .main-container {
     padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
