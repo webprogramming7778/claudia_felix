@@ -591,10 +591,10 @@
 .container.preset-plugin main.preset-top > .preset-plugin-container {
   order: 1;
 }
-.container.preset-plugin main.preset-left,
+/* .container.preset-plugin main.preset-left,
 .container.preset-plugin main.preset-right {
   grid-template-columns: auto auto;
-}
+} */
 .container.preset-plugin main.preset-left .preset-plugin-container,
 .container.preset-plugin main.preset-right .preset-plugin-container {
   display: none;

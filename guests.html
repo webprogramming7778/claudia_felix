@@ -18,6 +18,25 @@
   <body>
     <div class="layout-container">
       <aside class="sidebar-container">
+        <button id="sidebar-close-btn" type="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              opacity="0.4"
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              fill="#292D32"
+            />
+            <path
+              d="M13.0599 12L15.3599 9.69998C15.6499 9.40998 15.6499 8.92999 15.3599 8.63999C15.0699 8.34999 14.5899 8.34999 14.2999 8.63999L11.9999 10.94L9.69986 8.63999C9.40986 8.34999 8.92986 8.34999 8.63986 8.63999C8.34986 8.92999 8.34986 9.40998 8.63986 9.69998L10.9399 12L8.63986 14.3C8.34986 14.59 8.34986 15.07 8.63986 15.36C8.78986 15.51 8.97986 15.58 9.16986 15.58C9.35986 15.58 9.54986 15.51 9.69986 15.36L11.9999 13.06L14.2999 15.36C14.4499 15.51 14.6399 15.58 14.8299 15.58C15.0199 15.58 15.2099 15.51 15.3599 15.36C15.6499 15.07 15.6499 14.59 15.3599 14.3L13.0599 12Z"
+              fill="#292D32"
+            />
+          </svg>
+        </button>
         <div class="sidebar">
           <a href="" class="site-logo">
             <img src="./assets/images/site-logo.png" alt="site logo" />
@@ -55,91 +74,7 @@
               </svg>
               <span>Dashboard</span>
             </a>
-            <a href="./booking.html" class="nav-item">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M8 2V5"
-                  stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16 2V5"
-                  stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M3.5 9.09009H20.5"
-                  stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z"
-                  stroke="#292D32"
-                  stroke-width="1.5"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M15.6937 13.7H15.7027"
-                  stroke="#292D32"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M15.6937 16.7H15.7027"
-                  stroke="#292D32"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M11.9945 13.7H12.0035"
-                  stroke="#292D32"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M11.9945 16.7H12.0035"
-                  stroke="#292D32"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.29529 13.7H8.30427"
-                  stroke="#292D32"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8.29529 16.7H8.30427"
-                  stroke="#292D32"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span>Bookings</span>
-            </a>
+            
             <a href="./orders.html" class="nav-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -257,6 +192,21 @@
               </svg>
               <span>Payments</span>
             </a>
+            <a href="./blog.html" class="nav-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M3.75 4.875H10.875V6.375H3.75C3.3375 6.375 3 6.7125 3 7.125V9.375H10.875V10.875H3V19.875C3 20.2875 3.3375 20.625 3.75 20.625H10.875V22.125H3.75C2.5125 22.125 1.5 21.1125 1.5 19.875V7.125C1.5 5.8875 2.5125 4.875 3.75 4.875ZM6.75 8.625V7.125H4.5V8.625H6.75ZM9.75 8.625V7.125H7.5V8.625H9.75ZM4.125 17.625H10.875V16.125H4.125V17.625ZM4.125 19.875H10.875V18.375H4.125V19.875ZM10.875 12.375V14.625C10.875 15.0375 10.5375 15.375 10.125 15.375H4.875C4.4625 15.375 4.125 15.0375 4.125 14.625V12.375C4.125 11.9625 4.4625 11.625 4.875 11.625H10.125C10.5375 11.625 10.875 11.9625 10.875 12.375ZM9.375 13.125H5.625V13.875H9.375V13.125ZM13.5 19.875V4.125C13.5 3.7125 13.8375 3.375 14.25 3.375H20.25C20.6625 3.375 21 3.7125 21 4.125V14.625H22.5V4.125C22.5 2.8875 21.4875 1.875 20.25 1.875H14.25C13.0125 1.875 12 2.8875 12 4.125V19.875C12 21.1125 13.0125 22.125 14.25 22.125H15V20.625H14.25C13.8375 20.625 13.5 20.2875 13.5 19.875ZM21.9 19.275L19.275 21.9C19.125 22.05 18.9375 22.125 18.75 22.125H16.5C16.0875 22.125 15.75 21.7875 15.75 21.375V18.75C15.75 18.5625 15.825 18.375 15.975 18.225L18.4125 15.7875C18.9 15.3 19.575 15.0375 20.25 15.075C20.925 15.1125 21.6 15.4125 22.05 15.9375C22.875 16.9125 22.8 18.375 21.9 19.275ZM20.8875 16.9125C20.7 16.6875 20.475 16.575 20.175 16.575C19.9125 16.575 19.65 16.65 19.4625 16.875L17.25 19.05V20.625H18.45L20.85 18.225C21.1875 17.85 21.225 17.2875 20.8875 16.9125ZM20.25 7.875C20.25 8.2875 19.9125 8.625 19.5 8.625H15C14.5875 8.625 14.25 8.2875 14.25 7.875V4.875C14.25 4.4625 14.5875 4.125 15 4.125H19.5C19.9125 4.125 20.25 4.4625 20.25 4.875V7.875ZM18.75 5.625H15.75V7.125H18.75V5.625ZM20.25 9.375H14.25V10.875H20.25V9.375ZM20.25 11.625H14.25V13.125H20.25V11.625ZM14.25 15.375H17.625V13.875H14.25V15.375Z"
+                  fill="black"
+                />
+              </svg>
+              <span>Blog</span>
+            </a>
             <a href="./message.html" class="nav-item">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -358,6 +308,34 @@
       <div class="main-container">
         <div class="main-content">
           <div class="topbar">
+            <button id="sidebar-open-btn" type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="12"
+                viewBox="0 0 14 12"
+                fill="none"
+              >
+                <path
+                  d="M1 1H13"
+                  stroke="#000"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M1 6H13"
+                  stroke="#000"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M1 11H13"
+                  stroke="#000"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
             <div class="search-container">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -475,39 +453,6 @@
                 </svg>
                 <input type="text" placeholder="Search" />
               </div>
-              <button type="button" class="button button-outline">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M14.3206 19.07C14.3206 19.68 13.9205 20.48 13.4105 20.79L12.0005 21.7C10.6905 22.51 8.87054 21.6 8.87054 19.98V14.63C8.87054 13.92 8.47055 13.01 8.06055 12.51L4.22052 8.47C3.71052 7.96 3.31055 7.06001 3.31055 6.45001V4.13C3.31055 2.92 4.22057 2.01001 5.33057 2.01001H18.6705C19.7805 2.01001 20.6906 2.92 20.6906 4.03V6.25C20.6906 7.06 20.1805 8.07001 19.6805 8.57001"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16.0692 16.5201C17.8365 16.5201 19.2692 15.0874 19.2692 13.3201C19.2692 11.5528 17.8365 10.1201 16.0692 10.1201C14.3018 10.1201 12.8691 11.5528 12.8691 13.3201C12.8691 15.0874 14.3018 16.5201 16.0692 16.5201Z"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M19.8691 17.1201L18.8691 16.1201"
-                    stroke="black"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span>Filter</span>
-              </button>
               <input class="date-input" />
               <a href="./addGuest.html" class="button button-pri" type="button">
                 <svg
@@ -1817,11 +1762,7 @@
         </div>
       </div>
     </div>
-    <script src="./assets/js/plugins/jquery-3.7.1.min.js"></script>
-    <script src="./assets/js/plugins/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/plugins/easepick1.2.1.umd.min.js"></script>
-    <script src="./assets/js/plugins/jquery.nice-select.min.js"></script>
-    <script src="./assets/js/plugins/owl.carousel.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
