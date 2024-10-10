@@ -620,7 +620,21 @@
   object-fit: cover;
 }
 /* settings.html end */
-
+.tm-form-input-wrapper .form-control{
+  height: 50px;
+  border-radius: 8px;
+}
+.tm-form-input-wrapper .form-control:hover,
+.tm-form-input-wrapper .form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #999;
+  outline: 0;
+  box-shadow: none !important;
+}
+.tm-form-input-wrapper textarea{
+  height: 500px !important;
+}
 /* service.html start */
 .tm-services-section {
   display: grid;
