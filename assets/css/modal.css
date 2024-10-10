@@ -1,25 +1,25 @@
-.modal-open.btn:focus,
-.modal .modal-dialog .btn-close:focus,
-.modal .notify-item .notify-close:focus {
+#notificationModal .modal-open.btn:focus,
+#notificationModal .modal .modal-dialog .btn-close:focus,
+#notificationModal .modal .notify-item .notify-close:focus {
   box-shadow: none;
 }
 
-.modal .modal-dialog .modal-content {
+#notificationModal .modal .modal-dialog .modal-content {
   max-height: 98vh;
   overflow-y: auto;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.modal .modal-dialog .modal-header {
+#notificationModal .modal .modal-dialog .modal-header {
   border-bottom-width: 0;
 }
 
-.modal .modal-dialog .modal-footer {
+#notificationModal .modal .modal-dialog .modal-footer {
   border-top-width: 0;
 }
 
-.modal .modal-dialog .btn-close {
+#notificationModal .modal .modal-dialog .btn-close {
   background-color: var(--light);
   margin-left: 0;
   border-radius: 9999px;
@@ -28,7 +28,7 @@
   padding: 0;
 }
 
-.modal .modal-dialog .modal-header .modal-title {
+#notificationModal .modal .modal-dialog .modal-header .modal-title {
   margin-left: auto;
   margin-right: auto;
   color: var(--dark);
@@ -39,24 +39,24 @@
   letter-spacing: -0.48px;
 }
 
-.modal .modal-content::-webkit-scrollbar {
+#notificationModal .modal .modal-content::-webkit-scrollbar {
   display: none;
 }
 
-.modal .modal-dialog .modal-body::-webkit-scrollbar {
+#notificationModal .modal .modal-dialog .modal-body::-webkit-scrollbar {
   display: none;
 }
 
-.modal .modal-dialog .modal-body.notify-body {
+#notificationModal .modal .modal-dialog .modal-body.notify-body {
   height: 100%;
   overflow-y: auto;
 }
 
-.modal .modal-dialog .modal-body.notify-body > * + * {
+#notificationModal .modal .modal-dialog .modal-body.notify-body > * + * {
   margin-top: 10px;
 }
 
-.modal .notify-item {
+#notificationModal .modal .notify-item {
   display: flex;
   align-items: start;
   background-color: #eff5fe;
@@ -65,11 +65,11 @@
   border-radius: 18px;
 }
 
-.modal .notify-item .notify-details {
+#notificationModal .modal .notify-item .notify-details {
   margin-right: auto;
 }
 
-.modal .notify-item .notify-details .notify-title {
+#notificationModal .modal .notify-item .notify-details .notify-title {
   color: #121715;
   font-size: 14px;
   font-style: normal;
@@ -79,7 +79,7 @@
   letter-spacing: -0.4px;
 }
 
-.modal .notify-item .notify-details .notify-data {
+#notificationModal .modal .notify-item .notify-details .notify-data {
   color: #6b7280;
   font-size: 12px;
   font-style: normal;
@@ -88,25 +88,34 @@
   margin: 0;
 }
 
-.modal .notify-item .notify-close {
+#notificationModal .modal .notify-item .notify-close {
   padding: 1px 2px;
 }
 
 /* small screen */
 @media only screen and (min-width: 640px) {
-  .modal .modal-dialog .modal-content {
+  #notificationModal .modal .modal-dialog .modal-content {
     max-height: 80vh;
     padding: 24px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
-  .modal .notify-item .notify-details .notify-title {
+  #notificationModal .modal .notify-item .notify-details .notify-title {
     font-size: 20px;
   }
-  .modal .notify-item .notify-details .notify-data {
+  #notificationModal .modal .notify-item .notify-details .notify-data {
     font-size: 18px;
   }
-  .modal .modal-dialog .modal-body.notify-body > * + * {
+  #notificationModal .modal .modal-dialog .modal-body.notify-body > * + * {
     margin-top: 20px;
   }
+}
+@media only screen and (max-width: 639px) {
+  #notificationModal .modal-content {
+    padding: 12px !important;
+}
+  #notificationModal .modal-header .btn-close {
+    top: 11px;
+    right: 15px;
+}
 }
