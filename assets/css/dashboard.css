@@ -191,6 +191,9 @@
 .sub-nav-trigger[aria-expanded="true"] .arrow-icon{
   transform: rotate(180deg);
 }
+.sub-nav-trigger[aria-expanded="false"] .arrow-icon{
+  transform: rotate(0deg);
+}
 .sub-nav-links {
   display: flex;
   align-items: flex-start;

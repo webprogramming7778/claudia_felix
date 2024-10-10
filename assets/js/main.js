@@ -151,17 +151,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // sidebar open and close end
 
   // sidebar dropdown start
-  const subNavTrigger = document.querySelectorAll(".sub-nav-trigger");
+  // const subNavTrigger = document.querySelectorAll(".sub-nav-trigger");
 
-  if (subNavTrigger.length > 0) {
-    subNavTrigger.forEach((trigger) => {
-      trigger.addEventListener("click", function (e) {
-        e.stopPropagation();
+  // if (subNavTrigger.length > 0) {
+  //   subNavTrigger.forEach((trigger) => {
+  //     trigger.addEventListener("click", function (e) {
+  //       e.stopPropagation();
         
-        window.location.href = this.dataset.href
-      });
-    });
-  }
+  //       window.location.href = this.dataset.href
+  //     });
+  //   });
+  // }
   // sidebar dropdown end
 
   // settings page date of birth

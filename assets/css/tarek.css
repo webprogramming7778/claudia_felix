@@ -626,6 +626,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 66px;
+  margin-top: 30px;
 }
 .tm-service-card {
   width: 100%;

@@ -1,11 +1,5 @@
-@import url("./plugins/bootstrap.min.css");
-@import url("./plugins/owl.carousel.min.css");
-@import url("./plugins/owl.theme.default.min.css");
-@import url("./plugins/flatpickr.min.css");
-@import url("./plugins/nice-select.css");
 @import url("./base.css");
 @import url("./components.css");
 @import url("./dashboard.css");
 @import url("./message.css");
 @import url("./tarek.css");
-@import url("./modal.css");
