@@ -111,10 +111,10 @@
   }
 }
 @media only screen and (max-width: 639px) {
-  #notificationModal.modal-content {
+  #notificationModal .modal-content {
     padding: 12px !important;
 }
-  #notificationModal.modal-header .btn-close {
+  #notificationModal .modal-header .btn-close {
     top: 11px;
     right: 15px;
 }

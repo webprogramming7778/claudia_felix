@@ -148,21 +148,30 @@ document.addEventListener("DOMContentLoaded", function () {
       mainContent.classList.remove("scroll-hide");
     });
   }
-  // sidebar open and close end
 
-  // sidebar dropdown start
-  // const subNavTrigger = document.querySelectorAll(".sub-nav-trigger");
+  const chatItems = document.querySelectorAll("div.people-chat-item");
+  const peopleSection = document.querySelector("div.people-section");
+  const chatSection = document.querySelector("div.chat-section");
+  const chatBackBtn = document.querySelector("button.back-btn")
+  const enableChatSection = window.matchMedia("(max-width: 767px)");
 
-  // if (subNavTrigger.length > 0) {
-  //   subNavTrigger.forEach((trigger) => {
-  //     trigger.addEventListener("click", function (e) {
-  //       e.stopPropagation();
-        
-  //       window.location.href = this.dataset.href
-  //     });
-  //   });
-  // }
-  // sidebar dropdown end
+  if (chatItems.length > 0 && chatSection && chatBackBtn && enableChatSection.matches) {
+    chatItems.forEach((chatItem) => {
+      chatItem.addEventListener("click", function (e) {
+        e.stopPropagation();
+
+        chatSection.classList.toggle("show");
+        peopleSection.classList.toggle("hide");
+      });
+    });
+
+    chatBackBtn.addEventListener("click", function(e) {
+      e.stopPropagation()
+
+      chatSection.classList.toggle("show");
+        peopleSection.classList.toggle("hide");
+    })
+  }
 
   // settings page date of birth
   const dateOfBirth = document.getElementById("dateOfBirth");
