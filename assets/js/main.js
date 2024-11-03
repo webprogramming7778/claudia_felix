@@ -72,43 +72,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // easepick for table range date picker
-  const dateInput = document.querySelector(".date-input")
-  if(dateInput && easepick){
+  // table filter date input start
+  const dateInput = document.querySelector(".date-input");
+
+  if (dateInput && typeof flatpickr !== "undefined") {
     const today = new Date();
-  
+
     const tenDaysLater = new Date(today);
     tenDaysLater.setDate(today.getDate() + 10);
-    
+
     function formatDate(date) {
-      return date.toLocaleDateString("en-US", { month: "short", day: "2-digit" });
+      return date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+      });
     }
-    
-    const picker = new easepick.create({
-      element: dateInput,
-      css: ["./assets/css/plugins/easepick1.2.1.css"],
-      plugins: ["RangePlugin"],
-      format: "MMM DD",
+
+    flatpickr(dateInput, {
+      mode: "range",
+      dateFormat: "M d",
     });
 
-    dateInput.value = `${formatDate(today)} - ${formatDate(tenDaysLater)}`;
+    dateInput.value = `${formatDate(today)} to ${formatDate(tenDaysLater)}`;
   }
-
-  const bookingDate = document.getElementById("booking-date")
-  if(bookingDate && easepick){
-    const picker = new easepick.create({
-      element: bookingDate,
-      css: ["./assets/css/plugins/easepick1.2.1.css"],
-      plugins: [],
-      inline: true,
-      setup(picker) {
-        picker.on('select', (e) => {
-          console.log(e.detail.date);
-        });
-      },
-    });
-  }
-
+  // table filter date input end
   // table select
   const tables = document.querySelectorAll("table.table");
 
@@ -136,21 +123,60 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  $(".select").niceSelect();
+  const select = $(".select");
 
-  // room date input
-  const roomDate = document.getElementById("room-date")
-  if(roomDate && easepick){
-    const picker = new easepick.create({
-      element: roomDate,
-      css: ["./assets/css/plugins/easepick1.2.1.css"],
-      plugins: [],
-      format: "MMM DD, YYYY",
-      setup(picker) {
-        picker.on('select', (e) => {
-          console.log(e.detail.date);
-        });
-      },
+  if (select.length > 0) {
+    select.niceSelect();
+  }
+
+  // sidebar open and close start
+  const sidebarOpenBtn = document.getElementById("sidebar-open-btn");
+  const sidebarCloseBtn = document.getElementById("sidebar-close-btn");
+  const sidebar = document.querySelector(".sidebar-container");
+  const mainContent = document.querySelector(".main-content");
+
+  if (sidebarOpenBtn && sidebarCloseBtn && sidebar && mainContent) {
+    sidebarOpenBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      sidebar.classList.add("show");
+      mainContent.classList.add("scroll-hide");
     });
+
+    sidebarCloseBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      sidebar.classList.remove("show");
+      mainContent.classList.remove("scroll-hide");
+    });
+  }
+
+  const chatItems = document.querySelectorAll("div.people-chat-item");
+  const peopleSection = document.querySelector("div.people-section");
+  const chatSection = document.querySelector("div.chat-section");
+  const chatBackBtn = document.querySelector("button.back-btn")
+  const enableChatSection = window.matchMedia("(max-width: 767px)");
+
+  if (chatItems.length > 0 && chatSection && chatBackBtn && enableChatSection.matches) {
+    chatItems.forEach((chatItem) => {
+      chatItem.addEventListener("click", function (e) {
+        e.stopPropagation();
+
+        chatSection.classList.toggle("show");
+        peopleSection.classList.toggle("hide");
+      });
+    });
+
+    chatBackBtn.addEventListener("click", function(e) {
+      e.stopPropagation()
+
+      chatSection.classList.toggle("show");
+        peopleSection.classList.toggle("hide");
+    })
+  }
+
+  // settings page date of birth
+  const dateOfBirth = document.getElementById("dateOfBirth");
+
+  if (dateOfBirth && typeof flatpickr !== "undefined") {
+    flatpickr(dateOfBirth, {});
   }
 });

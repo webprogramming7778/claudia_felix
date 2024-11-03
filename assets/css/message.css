@@ -2,22 +2,25 @@
   display: flex;
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 1rem 2.5rem;
-  gap: 2rem;
+  padding: 1rem;
+  gap: 1rem;
   margin-top: 2rem;
   height: 72vh;
 }
 .message-container .separator {
   width: 1px;
   border-left: 1px solid var(--border);
+  display: none;
 }
 
 .people-section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 460px;
+  gap: 1rem;
   width: 100%;
+}
+.people-section.hide {
+  display: none;
 }
 .people-section .title {
   color: var(--text-pri);
@@ -39,8 +42,8 @@
 }
 
 .people-chat-section > * + * {
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
   border-top: 1px solid var(--border);
 }
 
@@ -48,13 +51,14 @@
   font-family: var(--lexend-font);
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 0.75rem;
   cursor: pointer;
 }
 
 .people-chat-item .people-img {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
   position: relative;
 }
 .people-chat-item .people-img img {
@@ -145,15 +149,28 @@
 
 .chat-section {
   flex-grow: 1;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
+.chat-section.hide {
+  display: none;
+}
+.chat-section.show {
+  display: flex;
+}
+
 .chat-section .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border);
+}
+
+.chat-section .header .back-btn {
+  border: none;
+  outline: none;
+  background: none;
 }
 
 .chat-section .header .profile-section {
@@ -163,8 +180,8 @@
   gap: 1rem;
 }
 .chat-section .profile-section .profile-img {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 999px;
   overflow: hidden;
 }
@@ -224,7 +241,7 @@
 }
 
 .chat > * + * {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .chat .right-chat {
   display: flex;
@@ -311,7 +328,7 @@
 }
 
 /* scrollbar styles */
-.nav-links{
+.nav-links {
   padding-right: 10px;
 }
 .nav-links::-webkit-scrollbar,
@@ -331,4 +348,77 @@
 .chat::-webkit-scrollbar-thumb {
   background: var(--accent-pri);
   border-radius: 5px;
+}
+
+/* all minimum width responsive styles and rules */
+/* Extra small screen */
+@media only screen and (min-width: 375px) {
+}
+
+/* small screen */
+@media only screen and (min-width: 480px) {
+}
+
+/* learg small screen */
+@media only screen and (min-width: 576px) {
+}
+
+/* medium screen */
+@media only screen and (min-width: 768px) {
+  .people-section {
+    max-width: 280px;
+    gap: 1.5rem;
+  }
+  .chat-section {
+    display: flex;
+  }
+  .message-container .separator {
+    display: block;
+  }
+  .chat-section .header .back-btn {
+    display: none;
+  }
+}
+
+/* large screen */
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1024px) {
+  .people-section {
+    max-width: 300px;
+  }
+  .message-container {
+    gap: 1.5rem;
+  }
+  .people-chat-section > * + * {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  .chat > * + * {
+    margin-top: 1rem;
+  }
+}
+
+/* X-large */
+@media only screen and (min-width: 1200px) {
+  .people-section {
+    max-width: 460px;
+    gap: 2rem;
+  }
+  .message-container {
+    padding: 1rem 2.5rem;
+    gap: 2rem;
+  }
+  .people-chat-item {
+    gap: 1.5rem;
+  }
+  .people-chat-item .people-img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .chat-section .profile-section .profile-img {
+    width: 3rem;
+    height: 3rem;
+  }
 }
